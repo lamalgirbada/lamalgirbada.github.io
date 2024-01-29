@@ -1,0 +1,123 @@
+
+/* Paleta de colors */
+:root {
+    --lila_malgi: #662481;
+    --taronja-malgi: #e84d1d;
+    --blanc: #ffffff;
+    --negre: #000000;
+  }
+
+/* Tipus de lletra */
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('fonts/me_regular.otf') format('opentype'), /* OTF format */;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estils de paràgraf */
+
+.title {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 4.5rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* semibold */
+    font-size: 2.5rem;
+    line-height: 0;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* semibold */
+    font-size: 1.5rem;
+    line-height: 0.5;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* semibold */
+    font-size: 1rem;
+    line-height: 0.5;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; /* thin */
+    font-size: 1rem;
+}
+
+/* Contenidor 1: Títol */
+.purple-container {
+    background-color: var(--lila_malgi);
+    color: var(--blanc);
+    padding: 5% 10% 1% 10%; /* top right bottom left */
+}
+
+/* Contenidor 2: Intro */
+.white-container {
+    background-color: var(--blanc);
+    color: var(--negre);
+    padding: 5% 10% 1% 10%; /* top right bottom left */
+}
+
+/* Contenidor de columnes, una al costat de l'altra */
+
+.row{
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    align-items: center; /* Center the columns vertically */
+    flex-wrap: wrap;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - si la pantalla és inferior a la mida definida, posa les columnes una sota l'altra */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /* Contenidor Footer */
+.footer {
+    background-color: var(--lila_malgi);
+    color: var(--blanc);
+    padding: 5% 10% 5% 10%; /* top right bottom left */
+    text-align: center;
+}
+
+/* Botó */
+.button {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3% 3%;
+    padding: 2% 4%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: var(--lila_malgi);
+    color: var(--blanc); 
+    border: 2px solid var(--blanc);
+  }
+  
+  .button:hover {
+    background-color: var(--blanc);
+    color: var(--lila_malgi);
+  }
