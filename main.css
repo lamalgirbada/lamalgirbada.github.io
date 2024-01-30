@@ -20,13 +20,13 @@
 .title {
     font-family: 'MonumentExtended', sans-serif;
     font-size: 4.5rem;
+    letter-spacing: 5px;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; /* semibold */
     font-size: 2.5rem;
-    line-height: 0;
 
 }
 
@@ -34,14 +34,12 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; /* semibold */
     font-size: 1.5rem;
-    line-height: 0.5;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; /* semibold */
     font-size: 1rem;
-    line-height: 0.5;
 }
 
 p {
@@ -71,11 +69,11 @@ p {
     justify-content: center; /* Center the columns horizontally */
     align-items: center; /* Center the columns vertically */
     flex-wrap: wrap;
+    margin-bottom: 10%;
 }
 
 .column {
     float: left;
-    width: 20%;
     padding: 10px;
     text-align: center;
   }
@@ -121,3 +119,14 @@ p {
     background-color: var(--blanc);
     color: var(--lila_malgi);
   }
+
+/* Color de selecció personalitzat */
+::-moz-selection { /* Code for Firefox */
+  color: var(--blanc);
+  background: var(--taronja-malgi);
+}
+
+::selection {
+  color: var(--blanc);
+  background: var(--taronja-malgi);
+}
